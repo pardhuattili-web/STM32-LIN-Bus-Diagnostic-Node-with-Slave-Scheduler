@@ -1,0 +1,12 @@
+Debug/
+Release/
+build/
+*.elf
+*.hex
+*.bin
+*.map
+*.o
+*.d
+.vscode/
+__pycache__/
+.pytest_cache/

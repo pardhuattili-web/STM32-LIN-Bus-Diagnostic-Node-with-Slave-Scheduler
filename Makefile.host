@@ -1,0 +1,8 @@
+CC ?= cc
+CFLAGS ?= -std=c11 -Wall -Wextra -Werror
+test_lin_protocol: Protocol/Src/lin_protocol.c tests/test_lin_protocol.c
+	$(CC) $(CFLAGS) -IProtocol/Inc $^ -o $@
+test: test_lin_protocol
+	./test_lin_protocol
+clean:
+	rm -f test_lin_protocol
